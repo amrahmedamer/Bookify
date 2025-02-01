@@ -1,0 +1,14 @@
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\obj\Debug\net7.0\Bookify.Domain.csproj.AssemblyReference.cache
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\obj\Debug\net7.0\Bookify.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\obj\Debug\net7.0\Bookify.Domain.AssemblyInfoInputs.cache
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\obj\Debug\net7.0\Bookify.Domain.AssemblyInfo.cs
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\obj\Debug\net7.0\Bookify.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\bin\Debug\net7.0\Bookify.Domain.deps.json
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\bin\Debug\net7.0\Bookify.Domain.dll
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\bin\Debug\net7.0\Bookify.Domain.pdb
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\obj\Debug\net7.0\Bookify.Domain.dll
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\obj\Debug\net7.0\refint\Bookify.Domain.dll
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\obj\Debug\net7.0\Bookify.Domain.pdb
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\obj\Debug\net7.0\ref\Bookify.Domain.dll
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\bin\Debug\net7.0\Bookify.Domain.runtimeconfig.json
+C:\Users\Omar\source\repos\Bookify\Bookify.Domain\obj\Debug\net7.0\Bookify.Domain.genruntimeconfig.cache

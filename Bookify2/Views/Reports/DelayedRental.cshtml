@@ -1,0 +1,77 @@
+﻿@model IEnumerable<RentalCopyViewModel>
+@{
+    ViewData["title"] = "Delayed Report";
+}
+
+
+@if (Model.Any())
+{
+    <div class="card mt-5">
+        <div class="card-header">
+            <h1 class="card-title">Delayed Rentals</h1>
+            @if (Model.Any())
+            {
+                <div class="card-toolbar gap-3">
+                    <a class="btn btn-light-success" asp-action="ExportDelayedRentalToExcel">
+                        <i class="bi bi-file-earmark-excel-fill"></i>
+                        Export to Excel
+                    </a>
+                    <a class="btn btn-light-danger" asp-action="ExportDelayedRentalToPDF">
+                        <i class="bi bi-filetype-pdf"></i>
+                        Export to PDF
+                    </a>
+                </div>
+            }
+        </div>
+
+
+        <div class="card-body">
+
+            @if (!Model.Any())
+            {
+                <b>No books were found!</b>
+            }
+            else
+            {
+
+                <div class="table-responsive">
+                    <table id="Books" class="table table-row-dashed table-row-gray-300 table-hover gy-2 align-middle">
+                        <thead>
+                            <tr class="fw-bold fs-6 text-white bg-black">
+                                <th class="ps-10 rounded-start">Subscriber ID</th>
+                                <th>Subscriber Name</th>
+                                <th>Subscriber Phone</th>
+                                <th>Book Title</th>
+                                <th>Book Serial</th>
+                                <th>Rental Date</th>
+                                <th>End Date</th>
+                                <th>Extended On</th>
+                                <th class="pe-5 rounded-end">Delay in Days</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var rental in Model)
+                            {
+                                <tr>
+                                    <td class="text-center">@rental.Rental!.SubscriberId</td>
+                                    <td>@rental.Rental!.Subscriber!.FirstName @rental.Rental!.Subscriber!.FirstName </td>
+                                    <td>@rental.Rental!.Subscriber!.MobileNumber </td>
+                                    <td>@rental.BookCopy!.Book!.Title</td>
+                                    <td>@rental.BookCopy!.SerialNumber</td>
+                                    <td>@rental.RentalDate.ToString("dd MMM,yyyy")</td>
+                                    <td>@rental.EndDate.ToString("dd MMM,yyyy")</td>
+                                    <td>@rental.ExtendedOn?.ToString("dd MMM,yyyy")</td>
+                                    <td class="text-center">@rental.DelayInDays</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+
+}
+
+

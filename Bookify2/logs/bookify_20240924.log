@@ -1,0 +1,630 @@
+09/24/2024 16:40:51 +01:00 HTTP "GET" "/" responded 500 in 1543.9397 ms
+System.InvalidOperationException: Incorrect number of arguments supplied for lambda invocation
+   at System.Dynamic.Utils.ExpressionUtils.ValidateArgumentCount(MethodBase method, ExpressionType nodeKind, Int32 count, ParameterInfo[] pis)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, Expression arg0, Expression arg1, Expression arg2)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, IEnumerable`1 arguments)
+   at AutoMapper.TypeMap.Invoke(Expression source, Expression destination)
+   at AutoMapper.Execution.ExpressionBuilder.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, TypePair typePair, Expression source, MemberMap memberMap, Expression destination)
+   at AutoMapper.Internal.Mappers.CollectionMapper.<MapExpression>g__MapCollectionCore|3_1(Expression destExpression, <>c__DisplayClass3_0&)
+   at AutoMapper.Internal.Mappers.CollectionMapper.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, MemberMap memberMap, Expression sourceExpression, Expression destExpression)
+   at AutoMapper.MapperConfiguration.<AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan>g__GenerateObjectMapperExpression|28_2(MapRequest& mapRequest, IObjectMapper mapper)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.<.ctor>g__CompileExecutionPlan|20_2(MapRequest mapRequest)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.MapperConfiguration.GetExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.GetExecutionPlan[TSource,TDestination](MapRequest& mapRequest)
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, MemberMap memberMap)
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at Bookify.Controllers.HomeController.Index() in C:\Users\Omar\source\repos\Bookify\Bookify2\Controllers\HomeController.cs:line 35
+   at lambda_method237(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+09/24/2024 16:40:52 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Incorrect number of arguments supplied for lambda invocation
+   at System.Dynamic.Utils.ExpressionUtils.ValidateArgumentCount(MethodBase method, ExpressionType nodeKind, Int32 count, ParameterInfo[] pis)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, Expression arg0, Expression arg1, Expression arg2)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, IEnumerable`1 arguments)
+   at AutoMapper.TypeMap.Invoke(Expression source, Expression destination)
+   at AutoMapper.Execution.ExpressionBuilder.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, TypePair typePair, Expression source, MemberMap memberMap, Expression destination)
+   at AutoMapper.Internal.Mappers.CollectionMapper.<MapExpression>g__MapCollectionCore|3_1(Expression destExpression, <>c__DisplayClass3_0&)
+   at AutoMapper.Internal.Mappers.CollectionMapper.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, MemberMap memberMap, Expression sourceExpression, Expression destExpression)
+   at AutoMapper.MapperConfiguration.<AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan>g__GenerateObjectMapperExpression|28_2(MapRequest& mapRequest, IObjectMapper mapper)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.<.ctor>g__CompileExecutionPlan|20_2(MapRequest mapRequest)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.MapperConfiguration.GetExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.GetExecutionPlan[TSource,TDestination](MapRequest& mapRequest)
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, MemberMap memberMap)
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at Bookify.Controllers.HomeController.Index() in C:\Users\Omar\source\repos\Bookify\Bookify2\Controllers\HomeController.cs:line 35
+   at lambda_method237(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Bookify.Program.<>c.<<Main>b__0_2>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 95
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 54
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/24/2024 16:42:34 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 53
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/24/2024 16:45:55 +01:00 HTTP "GET" "/" responded 500 in 646.5086 ms
+System.InvalidOperationException: Incorrect number of arguments supplied for lambda invocation
+   at System.Dynamic.Utils.ExpressionUtils.ValidateArgumentCount(MethodBase method, ExpressionType nodeKind, Int32 count, ParameterInfo[] pis)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, Expression arg0, Expression arg1, Expression arg2)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, IEnumerable`1 arguments)
+   at AutoMapper.TypeMap.Invoke(Expression source, Expression destination)
+   at AutoMapper.Execution.ExpressionBuilder.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, TypePair typePair, Expression source, MemberMap memberMap, Expression destination)
+   at AutoMapper.Internal.Mappers.CollectionMapper.<MapExpression>g__MapCollectionCore|3_1(Expression destExpression, <>c__DisplayClass3_0&)
+   at AutoMapper.Internal.Mappers.CollectionMapper.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, MemberMap memberMap, Expression sourceExpression, Expression destExpression)
+   at AutoMapper.MapperConfiguration.<AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan>g__GenerateObjectMapperExpression|28_2(MapRequest& mapRequest, IObjectMapper mapper)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.<.ctor>g__CompileExecutionPlan|20_2(MapRequest mapRequest)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.MapperConfiguration.GetExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.GetExecutionPlan[TSource,TDestination](MapRequest& mapRequest)
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, MemberMap memberMap)
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at Bookify.Controllers.HomeController.Index()
+   at lambda_method283(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+09/24/2024 16:45:55 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Incorrect number of arguments supplied for lambda invocation
+   at System.Dynamic.Utils.ExpressionUtils.ValidateArgumentCount(MethodBase method, ExpressionType nodeKind, Int32 count, ParameterInfo[] pis)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, Expression arg0, Expression arg1, Expression arg2)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, IEnumerable`1 arguments)
+   at AutoMapper.TypeMap.Invoke(Expression source, Expression destination)
+   at AutoMapper.Execution.ExpressionBuilder.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, TypePair typePair, Expression source, MemberMap memberMap, Expression destination)
+   at AutoMapper.Internal.Mappers.CollectionMapper.<MapExpression>g__MapCollectionCore|3_1(Expression destExpression, <>c__DisplayClass3_0&)
+   at AutoMapper.Internal.Mappers.CollectionMapper.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, MemberMap memberMap, Expression sourceExpression, Expression destExpression)
+   at AutoMapper.MapperConfiguration.<AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan>g__GenerateObjectMapperExpression|28_2(MapRequest& mapRequest, IObjectMapper mapper)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.<.ctor>g__CompileExecutionPlan|20_2(MapRequest mapRequest)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.MapperConfiguration.GetExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.GetExecutionPlan[TSource,TDestination](MapRequest& mapRequest)
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, MemberMap memberMap)
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at Bookify.Controllers.HomeController.Index()
+   at lambda_method283(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Bookify.Program.<>c.<<Main>b__0_2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/24/2024 17:05:48 +01:00 HTTP "GET" "/" responded 500 in 661.1128 ms
+System.InvalidOperationException: Incorrect number of arguments supplied for lambda invocation
+   at System.Dynamic.Utils.ExpressionUtils.ValidateArgumentCount(MethodBase method, ExpressionType nodeKind, Int32 count, ParameterInfo[] pis)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, Expression arg0, Expression arg1, Expression arg2)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, IEnumerable`1 arguments)
+   at AutoMapper.TypeMap.Invoke(Expression source, Expression destination)
+   at AutoMapper.Execution.ExpressionBuilder.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, TypePair typePair, Expression source, MemberMap memberMap, Expression destination)
+   at AutoMapper.Internal.Mappers.CollectionMapper.<MapExpression>g__MapCollectionCore|3_1(Expression destExpression, <>c__DisplayClass3_0&)
+   at AutoMapper.Internal.Mappers.CollectionMapper.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, MemberMap memberMap, Expression sourceExpression, Expression destExpression)
+   at AutoMapper.MapperConfiguration.<AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan>g__GenerateObjectMapperExpression|28_2(MapRequest& mapRequest, IObjectMapper mapper)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.<.ctor>g__CompileExecutionPlan|20_2(MapRequest mapRequest)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.MapperConfiguration.GetExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.GetExecutionPlan[TSource,TDestination](MapRequest& mapRequest)
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, MemberMap memberMap)
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at Bookify.Controllers.HomeController.Index() in C:\Users\Omar\source\repos\Bookify\Bookify2\Controllers\HomeController.cs:line 35
+   at lambda_method238(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+09/24/2024 17:05:48 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Incorrect number of arguments supplied for lambda invocation
+   at System.Dynamic.Utils.ExpressionUtils.ValidateArgumentCount(MethodBase method, ExpressionType nodeKind, Int32 count, ParameterInfo[] pis)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, Expression arg0, Expression arg1, Expression arg2)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, IEnumerable`1 arguments)
+   at AutoMapper.TypeMap.Invoke(Expression source, Expression destination)
+   at AutoMapper.Execution.ExpressionBuilder.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, TypePair typePair, Expression source, MemberMap memberMap, Expression destination)
+   at AutoMapper.Internal.Mappers.CollectionMapper.<MapExpression>g__MapCollectionCore|3_1(Expression destExpression, <>c__DisplayClass3_0&)
+   at AutoMapper.Internal.Mappers.CollectionMapper.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, MemberMap memberMap, Expression sourceExpression, Expression destExpression)
+   at AutoMapper.MapperConfiguration.<AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan>g__GenerateObjectMapperExpression|28_2(MapRequest& mapRequest, IObjectMapper mapper)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.<.ctor>g__CompileExecutionPlan|20_2(MapRequest mapRequest)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.MapperConfiguration.GetExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.GetExecutionPlan[TSource,TDestination](MapRequest& mapRequest)
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, MemberMap memberMap)
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at Bookify.Controllers.HomeController.Index() in C:\Users\Omar\source\repos\Bookify\Bookify2\Controllers\HomeController.cs:line 35
+   at lambda_method238(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Bookify.Program.<>c.<<Main>b__0_2>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 95
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 54
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/24/2024 17:06:08 +01:00 HTTP "GET" "/" responded 500 in 102.0304 ms
+System.InvalidOperationException: Incorrect number of arguments supplied for lambda invocation
+   at System.Dynamic.Utils.ExpressionUtils.ValidateArgumentCount(MethodBase method, ExpressionType nodeKind, Int32 count, ParameterInfo[] pis)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, Expression arg0, Expression arg1, Expression arg2)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, IEnumerable`1 arguments)
+   at AutoMapper.TypeMap.Invoke(Expression source, Expression destination)
+   at AutoMapper.Execution.ExpressionBuilder.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, TypePair typePair, Expression source, MemberMap memberMap, Expression destination)
+   at AutoMapper.Internal.Mappers.CollectionMapper.<MapExpression>g__MapCollectionCore|3_1(Expression destExpression, <>c__DisplayClass3_0&)
+   at AutoMapper.Internal.Mappers.CollectionMapper.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, MemberMap memberMap, Expression sourceExpression, Expression destExpression)
+   at AutoMapper.MapperConfiguration.<AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan>g__GenerateObjectMapperExpression|28_2(MapRequest& mapRequest, IObjectMapper mapper)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.<.ctor>g__CompileExecutionPlan|20_2(MapRequest mapRequest)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.MapperConfiguration.GetExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.GetExecutionPlan[TSource,TDestination](MapRequest& mapRequest)
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, MemberMap memberMap)
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at Bookify.Controllers.HomeController.Index() in C:\Users\Omar\source\repos\Bookify\Bookify2\Controllers\HomeController.cs:line 35
+   at lambda_method238(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+09/24/2024 17:06:08 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Incorrect number of arguments supplied for lambda invocation
+   at System.Dynamic.Utils.ExpressionUtils.ValidateArgumentCount(MethodBase method, ExpressionType nodeKind, Int32 count, ParameterInfo[] pis)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, Expression arg0, Expression arg1, Expression arg2)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, IEnumerable`1 arguments)
+   at AutoMapper.TypeMap.Invoke(Expression source, Expression destination)
+   at AutoMapper.Execution.ExpressionBuilder.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, TypePair typePair, Expression source, MemberMap memberMap, Expression destination)
+   at AutoMapper.Internal.Mappers.CollectionMapper.<MapExpression>g__MapCollectionCore|3_1(Expression destExpression, <>c__DisplayClass3_0&)
+   at AutoMapper.Internal.Mappers.CollectionMapper.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, MemberMap memberMap, Expression sourceExpression, Expression destExpression)
+   at AutoMapper.MapperConfiguration.<AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan>g__GenerateObjectMapperExpression|28_2(MapRequest& mapRequest, IObjectMapper mapper)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.<.ctor>g__CompileExecutionPlan|20_2(MapRequest mapRequest)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.MapperConfiguration.GetExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.GetExecutionPlan[TSource,TDestination](MapRequest& mapRequest)
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, MemberMap memberMap)
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at Bookify.Controllers.HomeController.Index() in C:\Users\Omar\source\repos\Bookify\Bookify2\Controllers\HomeController.cs:line 35
+   at lambda_method238(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Bookify.Program.<>c.<<Main>b__0_2>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 95
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 54
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/24/2024 17:06:51 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 53
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/24/2024 17:08:17 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 53
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/24/2024 17:08:49 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 53
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/24/2024 17:13:53 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 53
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/24/2024 17:17:16 +01:00 HTTP "GET" "/" responded 500 in 372.6528 ms
+System.InvalidOperationException: Incorrect number of arguments supplied for lambda invocation
+   at System.Dynamic.Utils.ExpressionUtils.ValidateArgumentCount(MethodBase method, ExpressionType nodeKind, Int32 count, ParameterInfo[] pis)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, Expression arg0, Expression arg1, Expression arg2)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, IEnumerable`1 arguments)
+   at AutoMapper.TypeMap.Invoke(Expression source, Expression destination)
+   at AutoMapper.Execution.ExpressionBuilder.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, TypePair typePair, Expression source, MemberMap memberMap, Expression destination)
+   at AutoMapper.Internal.Mappers.CollectionMapper.<MapExpression>g__MapCollectionCore|3_1(Expression destExpression, <>c__DisplayClass3_0&)
+   at AutoMapper.Internal.Mappers.CollectionMapper.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, MemberMap memberMap, Expression sourceExpression, Expression destExpression)
+   at AutoMapper.MapperConfiguration.<AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan>g__GenerateObjectMapperExpression|28_2(MapRequest& mapRequest, IObjectMapper mapper)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.<.ctor>g__CompileExecutionPlan|20_2(MapRequest mapRequest)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.MapperConfiguration.GetExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.GetExecutionPlan[TSource,TDestination](MapRequest& mapRequest)
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, MemberMap memberMap)
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at Bookify.Controllers.HomeController.Index() in C:\Users\Omar\source\repos\Bookify\Bookify2\Controllers\HomeController.cs:line 35
+   at lambda_method238(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+09/24/2024 17:17:16 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Incorrect number of arguments supplied for lambda invocation
+   at System.Dynamic.Utils.ExpressionUtils.ValidateArgumentCount(MethodBase method, ExpressionType nodeKind, Int32 count, ParameterInfo[] pis)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, Expression arg0, Expression arg1, Expression arg2)
+   at System.Linq.Expressions.Expression.Invoke(Expression expression, IEnumerable`1 arguments)
+   at AutoMapper.TypeMap.Invoke(Expression source, Expression destination)
+   at AutoMapper.Execution.ExpressionBuilder.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, TypePair typePair, Expression source, MemberMap memberMap, Expression destination)
+   at AutoMapper.Internal.Mappers.CollectionMapper.<MapExpression>g__MapCollectionCore|3_1(Expression destExpression, <>c__DisplayClass3_0&)
+   at AutoMapper.Internal.Mappers.CollectionMapper.MapExpression(IGlobalConfiguration configuration, ProfileMap profileMap, MemberMap memberMap, Expression sourceExpression, Expression destExpression)
+   at AutoMapper.MapperConfiguration.<AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan>g__GenerateObjectMapperExpression|28_2(MapRequest& mapRequest, IObjectMapper mapper)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.BuildExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.<.ctor>g__CompileExecutionPlan|20_2(MapRequest mapRequest)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.MapperConfiguration.GetExecutionPlan(MapRequest& mapRequest)
+   at AutoMapper.MapperConfiguration.AutoMapper.Internal.IGlobalConfiguration.GetExecutionPlan[TSource,TDestination](MapRequest& mapRequest)
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, MemberMap memberMap)
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at Bookify.Controllers.HomeController.Index() in C:\Users\Omar\source\repos\Bookify\Bookify2\Controllers\HomeController.cs:line 35
+   at lambda_method238(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Bookify.Program.<>c.<<Main>b__0_2>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 95
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 54
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/24/2024 17:21:17 +01:00 HTTP "GET" "/" responded 500 in 373.4219 ms
+System.InvalidOperationException: Missing map from Bookify.Domain.Entities.Book to System.Collections.Generic.IEnumerable`1[Bookify.Core.ViewModels.BookViewModel]. Create using CreateMap<Book, IEnumerable`1>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.Mapper.ProjectTo[TDestination](IQueryable source, Object parameters, Expression`1[] membersToExpand)
+   at Bookify.Controllers.HomeController.Index() in C:\Users\Omar\source\repos\Bookify\Bookify2\Controllers\HomeController.cs:line 34
+   at lambda_method238(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+09/24/2024 17:21:17 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Missing map from Bookify.Domain.Entities.Book to System.Collections.Generic.IEnumerable`1[Bookify.Core.ViewModels.BookViewModel]. Create using CreateMap<Book, IEnumerable`1>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.Mapper.ProjectTo[TDestination](IQueryable source, Object parameters, Expression`1[] membersToExpand)
+   at Bookify.Controllers.HomeController.Index() in C:\Users\Omar\source\repos\Bookify\Bookify2\Controllers\HomeController.cs:line 34
+   at lambda_method238(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Bookify.Program.<>c.<<Main>b__0_2>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 95
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 54
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/24/2024 22:20:37 +01:00 HTTP "GET" "/Books" responded 500 in 33.7565 ms
+System.InvalidOperationException: Unable to resolve service for type 'Bookify.Application.Common.Services.IBookServices' while attempting to activate 'Bookify.web.Controllers.BooksController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method525(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+09/24/2024 22:20:37 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Bookify.Application.Common.Services.IBookServices' while attempting to activate 'Bookify.web.Controllers.BooksController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method525(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Bookify.Program.<>c.<<Main>b__0_2>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 95
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 54
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)

@@ -1,0 +1,144 @@
+10/19/2024 15:26:16 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/19/2024 15:26:20 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/19/2024 16:34:44 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/19/2024 16:38:08 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/19/2024 16:42:33 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/19/2024 16:43:55 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/19/2024 16:44:21 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/19/2024 16:44:29 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/19/2024 16:45:19 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/19/2024 16:45:53 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/19/2024 16:48:48 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/19/2024 16:50:55 +01:00 An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: X-Frame-Options
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Bookify.Program.<>c.<<Main>b__0_1>d.MoveNext() in C:\Users\Omar\source\repos\Bookify\Bookify2\Program.cs:line 66
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Bookify.Middlewares.RequestCultureMiddleware.InvokeAsync(HttpContext context) in C:\Users\Omar\source\repos\Bookify\Bookify2\Middlewares\RequestCultureMiddleware.cs:line 46
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)

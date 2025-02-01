@@ -1,0 +1,42 @@
+﻿@model SearchFormViewModel
+<form  asp-action="Search"
+      data-ajax-method="post"
+      data-ajax="true"
+      data-ajax-begin="DisabledSubmitButtom"
+      data-ajax-update="#Result"
+      data-ajax-failure="ShowMessageError"
+      data-ajax-complete="onModalCompleted">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                Find a Subscribers
+            </div>
+        </div>
+
+        <div class="card-body">
+            <!--begin::Compact form-->
+            <div class="d-flex align-items-center">
+                <!--begin::Input group-->
+                <div class="position-relative w-md-400px me-md-2">
+                    <i class="bi bi-search fs-3 text-gray-500 position-absolute top-50 translate-middle ms-6"><span class="path1"></span><span class="path2"></span></i>
+                    <input type="text" class="form-control form-control-solid ps-10" asp-for="value"  placeholder="Search by Mobile,Email or NationalId">
+                </div>
+                <!--end::Input group-->
+                <!--begin:Action-->
+                <div class="d-flex align-items-center">
+                    <button type="submit" class="btn btn-primary me-5">Search</button>
+                </div>
+                <!--end:Action-->
+            </div>
+            <!--end::Compact form-->
+        </div>
+    </div>
+</form>
+<div id="Result" class="mt-5">
+
+</div>
+@section Scripts{
+    <partial name="_validationscriptspartial">
+}
+
+

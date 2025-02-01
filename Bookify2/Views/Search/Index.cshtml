@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["title"] = localizer["findbook"];
+}
+@section Styles{
+    <link href="~/css/typeahead.css" rel="stylesheet" />
+ }
+<div class="m-10">
+    <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1 pb-3">
+        <!--begin::Item-->
+        <li class="breadcrumb-item text-muted">
+            <a href="/" class="text-muted text-hover-primary">
+                @localizer["home"]
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                </svg>
+            </a>
+        </li>
+        <!--end::Item-->
+        <!--begin::Item-->
+        <li class="breadcrumb-item text-muted">
+            @localizer["findbook"]
+        </li>
+        <!--end::Item-->
+    </ul>
+
+    <div class="card mb-12">
+        <!--begin::Hero body-->
+        <div class="card-body flex-column p-5">
+            <!--begin::Hero content-->
+            <div class="d-flex align-items-center h-lg-300px p-5 p-lg-15">
+                <!--begin::Wrapper-->
+                <div class="d-flex flex-column align-items-start justift-content-center flex-equal me-5">
+                    <!--begin::Title-->
+                    <h1 class="fw-bold fs-4 fs-lg-1 text-gray-800 mb-5 mb-lg-10">
+                        @localizer["findbook"]
+                    </h1>
+                    <!--end::Title-->
+                    <!--begin::Input group-->
+                    <div class="position-relative w-100">
+                        <i class="bi bi-search fs-3 text-primary position-absolute top-50 translate-middle ms-6 z-index-3 icon-ar"><span class="path1"></span><span class="path2"></span></i>
+                        <input type="text" class="form-control fs-4 py-4 ps-14 text-gray-700 placeholder-gray-500 mw-500px has-icon" id="search" placeholder="@localizer["searchByTitleOrAuthorName"]">
+                    </div>
+                    <!--end::Input group-->
+                </div>
+                <!--end::Wrapper-->
+                <!--begin::Wrapper-->
+                <div class="flex-equal d-flex justify-content-center align-items-end ms-5">
+                    <!--begin::Illustration-->
+                    <img src="~/assets/images/search-dark.png" alt="search" class="mw-100 mh-125px mh-lg-275px mb-lg-n12 transform-x">
+                    <!--end::Illustration-->
+                </div>
+                <!--end::Wrapper-->
+            </div>
+            <!--end::Hero content-->
+        </div>
+        <!--end::Hero body-->
+    </div>
+</div>
+
+@section Plugins{
+    <script src="~/lib/typeahead.js/typeahead.bundle.min.js"></script>
+    <script src="~/lib/handlebars.js/handlebars.min.js"></script>
+ }
+
+@section Scripts
+ {
+    <script src="~/js/search.js" asp-append-version="true"></script>
+  }

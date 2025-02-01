@@ -1,0 +1,57 @@
+﻿{
+  "title": "بوكيفاي",
+  "homePage": "الصفحة الرئيسية",
+  "home": "الرئيسية",
+  "bookify": "بوكيفاي",
+  "bookifyStaff": "موظفي بوكيفاي",
+  "goToDashboard": "انتقل إلى لوحة التحكم",
+  "goToBooksFinder": "اذهب إلى الباحث عن الكتب",
+  "findbook": "ابحث عن كتاب",
+  "newlyAddedBooks": "الكتب المضافة حديثا",
+  "searchByTitleOrAuthorName": "البحث حسب العنوان أو اسم المؤلف",
+  "requiredField": "الحقل مطلوب",
+  "username/Email": "اسم المستخدم/البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "signIn": "تسجيل الدخول",
+  "pleasewait": "انتظر من فضلك",
+  "forgotPassword": "هل نسيت كلمة السر",
+  "bookifyby": " بوكيفاي، بقلم عمر أحمد",
+  "inThisKindOfPost": "في هذا النوع من المنشور",
+  "theBlogger": "المدون",
+  "introducesPerson": "يقدم الشخص الذي أجرى معه المقابلة",
+  "providesInformation": "ويقدم بعض المعلومات الأساسية حول",
+  "theInterviewee": "الشخص الذي تتم مقابلته",
+  "andTheir": "و هم",
+  "workFollowing": " العمل التالي هو نص المقابلة.",
+  "welcome": "مرحباً",
+  "dashboard": "لوحة القيادة",
+  "categories": "فئات",
+  "books": "كتب",
+  "authors": "المؤلفون",
+  "subscripers": "المشتركين",
+  "users": "المستخدمون",
+  "reports": "التقارير",
+  "search": "يبحث",
+  "theWorldOfBooks": "افتح عالم الكتب مع بوكيفاي.",
+  "recentlyAddedBooks": "الكتب المضافة حديثا",
+  "topBooks": "أفضل الكتب",
+  "rentals": "الإيجارات",
+  "perDay": "يوميا",
+  "loadingDateRange": "نطاق تاريخ التحميل",
+  "perCity": "لكل مدينة",
+  "accountSettings": "إعدادات الحساب",
+  "signOut": "تسجيل الخروج",
+  "language": "لغة"
+
+
+
+
+
+
+
+
+
+
+
+
+}

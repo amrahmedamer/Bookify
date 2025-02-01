@@ -1,0 +1,27 @@
+﻿@model ResetPasswordFomViewModel
+<form asp-controller="Users"
+      data-ajax="true"
+      data-ajax-method="post"
+      data-ajax-begin="onModalBegin"
+      data-ajax-success="OnModalSuccess"
+      data-ajax-failure="ShowMessageError"
+      data-ajax-complete="onModalCompleted">
+
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-5">
+        <div class="form-floating">
+            <input type="password" class="form-control form-control-solid" placeholder="Password" asp-for="Password" autocomplete="off" />
+            <label asp-for="Password"></label>
+        </div>
+        <span asp-validation-for="Password" class="text-danger d-block"></span>
+    </div>
+    <div class="mb-5">
+        <div class="form-floating">
+            <input type="password" class="form-control form-control-solid" placeholder="ConfirmPassword" asp-for="ConfirmPassword" autocomplete="off" />
+            <label asp-for="ConfirmPassword"></label>
+        </div>
+        <span asp-validation-for="ConfirmPassword" class="text-danger d-block"></span>
+    </div>
+
+    <partial name="_ModalFooter" />
+</form>

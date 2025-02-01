@@ -1,0 +1,15 @@
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\bin\Debug\net7.0\Bookify.Application.deps.json
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\bin\Debug\net7.0\Bookify.Application.dll
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\bin\Debug\net7.0\Bookify.Application.pdb
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\bin\Debug\net7.0\Bookify.Domain.dll
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\bin\Debug\net7.0\Bookify.Domain.pdb
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\obj\Debug\net7.0\Bookify.Application.csproj.AssemblyReference.cache
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\obj\Debug\net7.0\Bookify.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\obj\Debug\net7.0\Bookify.Application.AssemblyInfoInputs.cache
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\obj\Debug\net7.0\Bookify.Application.AssemblyInfo.cs
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\obj\Debug\net7.0\Bookify.Application.csproj.CoreCompileInputs.cache
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\obj\Debug\net7.0\Bookify.Application.dll
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\obj\Debug\net7.0\refint\Bookify.Application.dll
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\obj\Debug\net7.0\Bookify.Application.pdb
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\obj\Debug\net7.0\ref\Bookify.Application.dll
+C:\Users\Omar\source\repos\Bookify\Bookify.Application\obj\Debug\net7.0\Bookify..677C42B1.Up2Date

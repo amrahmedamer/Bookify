@@ -1,0 +1,130 @@
+﻿@page
+@model EmailModel
+@{
+    ViewData["Title"] = "Manage Email";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+<partial name="_StatusMessage" for="StatusMessage" />
+<div class="card">
+    <div class="card-body">
+        <div class="row flex-column-reverse flex-md-row">
+            <div class="col-md-6">
+                <!--begin::Body-->
+                <div class="d-flex flex-column-fluid flex-lg-row-auto justify-content-center justify-content-lg-end p-12">
+                    <!--begin::Wrapper-->
+                    <div class="bg-body d-flex flex-column flex-center rounded-4 w-md-600px p-10">
+                        <!--begin::Content-->
+                        <div class="d-flex flex-center flex-column align-items-stretch h-lg-100 w-md-400px">
+                            <!--begin::Wrapper-->
+                            <div class="d-flex flex-center flex-column flex-column-fluid pb-15 pb-lg-20">
+
+                                <!--begin::Form-->
+                                <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" method="post">
+                                    <!--begin::Heading-->
+                                    <div class="text-center mb-10">
+                                        <!--begin::Title-->
+                                        <h1 class="text-gray-900 fw-bolder mb-3">
+                                            @ViewData["Title"]
+                                        </h1>
+                                        <!--end::Title-->
+                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    </div>
+                                    <!--begin::Heading-->
+                                    @if (Model.IsEmailConfirmed)
+                                    {
+                                        <!--end::Input group--->
+                                        <div class="fv-row mb-10 fv-plugins-icon-container">
+                                            <label asp-for="Email" class="form-label"></label>
+                                            <input asp-for="Email" class="form-control form-control-solid bg-transparent" placeholder="Email" disabled>
+                                        </div>
+                                        <!--end::Input group--->
+                                    }
+                                    else
+                                    {
+                                        <div class="fv-row mb-10 fv-plugins-icon-container">
+                                            <input asp-for="Email" class="form-control" disabled />
+                                            <label asp-for="Email" class="form-label"></label>
+                                            <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link">Send verification email</button>
+                                        </div>
+                                    } 
+                                    <!--end::Input group--->
+                                    <div class="fv-row mb-10 fv-plugins-icon-container">
+                                        <label asp-for="Input.NewEmail" class="form-label"></label>
+                                        <input type="text" placeholder="New Email" asp-for="Input.NewEmail" class="form-control bg-transparent">
+                                        <span asp-validation-for="Input.NewEmail" class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></span>
+                                    </div>
+                                    <!--end::Input group--->
+                                    <!--begin::Action-->
+                                    <div class="d-grid mb-10">
+                                        <button type="Submit" id="change-email-button" asp-page-handler="ChangeEmail" class="btn btn-primary">
+                                            <!--begin::Indicator label-->
+                                            <span class="indicator-label">
+                                                Change Email
+                                            </span>
+                                            <!--end::Indicator label-->
+                                            <!--begin::Indicator progress-->
+                                            <span class="indicator-progress">
+                                                Please wait...    <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                            </span>
+                                            <!--end::Indicator progress-->
+                                        </button>
+                                    </div>
+                                    <!--end::Action-->
+                                </form>
+                                <!--end::Form-->
+                            </div>
+                            <!--end::Wrapper-->
+                        </div>
+                        <!--end::Content-->
+                    </div>
+                    <!--end::Wrapper-->
+                </div>
+                <!--end::Body-->
+            </div>
+            <div class="col-md-5">
+                <img src="~/assets/images/mail_sent-rafiki.svg" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@*
+<h3>@ViewData["Title"]</h3>
+<partial name="_StatusMessage" for="StatusMessage" />
+<div class="row">
+    <div class="col-md-6">
+        <form id="email-form" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            @if (Model.IsEmailConfirmed)
+            {
+                <div class="form-floating input-group">
+                    <input asp-for="Email" class="form-control" disabled />
+                    <div class="input-group-append">
+                        <span class="h-100 input-group-text text-success font-weight-bold">✓</span>
+                    </div>
+                    <label asp-for="Email" class="form-label"></label>
+                </div>
+            }
+            else
+            {
+                <div class="form-floating">
+                    <input asp-for="Email" class="form-control" disabled />
+                    <label asp-for="Email" class="form-label"></label>
+                    <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link">Send verification email</button>
+                </div>
+            }
+            <div class="form-floating">
+                <input asp-for="Input.NewEmail" class="form-control" autocomplete="email" aria-required="true" />
+                <label asp-for="Input.NewEmail" class="form-label"></label>
+                <span asp-validation-for="Input.NewEmail" class="text-danger"></span>
+            </div>
+            <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="w-100 btn btn-lg btn-primary">Change email</button>
+        </form>
+    </div>
+</div>
+*@
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

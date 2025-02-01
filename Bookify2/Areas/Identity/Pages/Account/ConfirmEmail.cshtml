@@ -1,0 +1,45 @@
+﻿@page
+@model ConfirmEmailModel
+@{
+    ViewData["Title"] = "Confirm email";
+}
+
+<div class="d-flex flex-column flex-center text-center p-10">
+    <!--begin::Wrapper-->
+    <div class="card card-flush w-md-650px py-5">
+        <div class="card-body py-15 py-lg-20">
+
+            <!--begin::Logo-->
+            <div class="mb-7">
+                <a href="/metronic8/demo1/index.html" class="">
+                    <img alt="Logo" src="~/assets/images/logo.png" class="h-60px">
+                </a>
+            </div>
+            <!--end::Logo-->
+            <!--begin::Title-->
+            <h1 class="fw-bolder text-gray-900 mb-5">
+                Welcome to Bookify
+            </h1>
+            <!--end::Title-->
+            <!--begin::Text-->
+            <div class="fw-semibold fs-6 text-gray-500 mb-7">
+                This is your opportunity to get creative and make a name
+                <br>
+                that gives readers an idea
+            </div>
+            <!--end::Text-->
+            <!--begin::Illustration-->
+            <div class="mb-0">
+                <img src="~/assets/images/welcome-rafiki.svg" class="mw-100 mh-300px theme-light-show" alt="">
+                <img src="~/assets/images/welcome-rafiki.svg" class="mw-100 mh-300px theme-dark-show" alt="">
+            </div>
+            <!--end::Illustration-->
+            <!--begin::Link-->
+            <div class="mb-0">
+                <a asp-page="./Login" class="btn btn-sm btn-primary">Go To Login</a>
+            </div>
+            <!--end::Link-->
+        </div>
+    </div>
+    <!--end::Wrapper-->
+</div>
